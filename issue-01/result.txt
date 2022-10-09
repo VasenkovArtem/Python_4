@@ -1,0 +1,131 @@
+Result of running command without flag: python -m doctest -v issue-01.py
+
+Trying:
+    encode('WHY ARE YOU SO SAD?')
+Expecting:
+    '.-- .... -.--   .- .-. .   -.-- --- ..-   ... ---   ... .- -.. ..--..'
+ok
+Trying:
+    encode('SOS')
+Expecting:
+    '... --- ...'
+ok
+Trying:
+    encode('SAVE MY SOUL!')
+Expecting:
+    Traceback (most recent call last):
+      ...
+    KeyError: '!'
+ok
+Trying:
+    encode('HELLO, WORLD')
+Expecting:
+    Traceback (most recent call last):
+      ...
+    KeyError: ','
+ok
+Trying:
+    encode('CAT, GO OUT')
+Expecting:
+    Traceback (most recent call last):
+      ... 
+    KeyError:   ','
+**********************************************************************
+File "C:\Users\Àðò¸ì\Documents\Python Projects\AAA\DS_Python_4\03-instrumenty-testirovaniya-v-python\issue-01\issue-01.py", line 44, in issue-01.encode
+Failed example:
+    encode('CAT, GO OUT')
+Expected:
+    Traceback (most recent call last):
+      ... 
+    KeyError:   ','
+Got:
+    Traceback (most recent call last):
+      File "C:\Program Files\Python39\lib\doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest issue-01.encode[5]>", line 1, in <module>
+        encode('CAT, GO OUT')
+      File "C:\Users\Àðò¸ì\Documents\Python Projects\AAA\DS_Python_4\03-instrumenty-testirovaniya-v-python\issue-01\issue-01.py", line 59, in encode
+        encoded_signs = [
+      File "C:\Users\Àðò¸ì\Documents\Python Projects\AAA\DS_Python_4\03-instrumenty-testirovaniya-v-python\issue-01\issue-01.py", line 60, in <listcomp>
+        LETTER_TO_MORSE[letter] for letter in message
+    KeyError: ','
+Trying:
+    encode('Without sugar, please')
+Expecting:
+    Traceback (most recent call last):
+      ... 
+    KeyError: 'i'
+ok
+Trying:
+    encode('With sugar, definitely') #doctest: +IGNORE_EXCEPTION_DETAIL
+Expecting:
+    Traceback (most recent call last):
+      ... 
+    KeyError: ','
+ok
+1 items had no tests:
+    issue-01
+**********************************************************************
+1 items had failures:
+   1 of   7 in issue-01.encode
+7 tests in 2 items.
+6 passed and 1 failed.
+***Test Failed*** 1 failures.
+
+
+--------------------------------------------------
+
+Result of running command with flag: python -m doctest -o NORMALIZE_WHITESPACE -v issue-01.py
+
+Trying:
+    encode('WHY ARE YOU SO SAD?')
+Expecting:
+    '.-- .... -.--   .- .-. .   -.-- --- ..-   ... ---   ... .- -.. ..--..'
+ok
+Trying:
+    encode('SOS')
+Expecting:
+    '... --- ...'
+ok
+Trying:
+    encode('SAVE MY SOUL!')
+Expecting:
+    Traceback (most recent call last):
+      ...
+    KeyError: '!'
+ok
+Trying:
+    encode('HELLO, WORLD')
+Expecting:
+    Traceback (most recent call last):
+      ...
+    KeyError: ','
+ok
+Trying:
+    encode('CAT, GO OUT')
+Expecting:
+    Traceback (most recent call last):
+      ... 
+    KeyError:   ','
+ok
+Trying:
+    encode('Without sugar, please')
+Expecting:
+    Traceback (most recent call last):
+      ... 
+    KeyError: 'i'
+ok
+Trying:
+    encode('With sugar, definitely') #doctest: +IGNORE_EXCEPTION_DETAIL
+Expecting:
+    Traceback (most recent call last):
+      ... 
+    KeyError: ','
+ok
+1 items had no tests:
+    issue-01
+1 items passed all tests:
+   7 tests in issue-01.encode
+7 tests in 2 items.
+7 passed and 0 failed.
+Test passed.

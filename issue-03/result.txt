@@ -1,0 +1,21 @@
+Result of running command: python -m unittest -v issue-03.py
+
+test_cities_list (issue-03.TestOneHotEncoder)
+This test - cities from the work example ... ok
+test_cities_strs (issue-03.TestOneHotEncoder)
+This test - increased the number of cities ... ok
+test_different_types (issue-03.TestOneHotEncoder)
+This test shows that types can be different, 1.0 and 1 - the ... ok
+test_mutable_type (issue-03.TestOneHotEncoder)
+This test shows that mutable type can't be processed ... ok
+test_several_iterable (issue-03.TestOneHotEncoder)
+This test shows that only the first iterable object passed in the ... ok
+test_type_error_args (issue-03.TestOneHotEncoder)
+This test shows, that not str objects can be one hot encoded only ... ok
+test_type_error_len (issue-03.TestOneHotEncoder)
+This test checks if TypeError raises if there is nothing passed ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK
