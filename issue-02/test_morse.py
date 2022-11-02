@@ -14,8 +14,3 @@ import pytest
 )
 def test_decode_morse(source_string: str, decoded_string: str):
     assert decode(source_string) == decoded_string
-
-
-if __name__ == '__main__':
-    test_decode_morse('..--- --- ..--- -....   .. ...   -.-. .-. .. -- .',
-                      '2O26ISCRIME')

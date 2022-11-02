@@ -1,4 +1,4 @@
-Result of running command without flag: python -m doctest -v issue-01.py
+Result of running command without flag: python -m doctest -v encode.py
 
 Trying:
     encode('WHY ARE YOU SO SAD?')
@@ -31,7 +31,7 @@ Expecting:
       ... 
     KeyError:   ','
 **********************************************************************
-File "C:\Users\Àðò¸ì\Documents\Python Projects\AAA\DS_Python_4\03-instrumenty-testirovaniya-v-python\issue-01\issue-01.py", line 44, in issue-01.encode
+File "C:\Users\ï¿½ï¿½ï¿½ï¿½\Documents\Python Projects\AAA\DS_Python_4\03-instrumenty-testirovaniya-v-python\issue-01\encode.py", line 44, in encode.encode
 Failed example:
     encode('CAT, GO OUT')
 Expected:
@@ -42,11 +42,11 @@ Got:
     Traceback (most recent call last):
       File "C:\Program Files\Python39\lib\doctest.py", line 1336, in __run
         exec(compile(example.source, filename, "single",
-      File "<doctest issue-01.encode[5]>", line 1, in <module>
+      File "<doctest encode.encode[5]>", line 1, in <module>
         encode('CAT, GO OUT')
-      File "C:\Users\Àðò¸ì\Documents\Python Projects\AAA\DS_Python_4\03-instrumenty-testirovaniya-v-python\issue-01\issue-01.py", line 59, in encode
+      File "C:\Users\ï¿½ï¿½ï¿½ï¿½\Documents\Python Projects\AAA\DS_Python_4\03-instrumenty-testirovaniya-v-python\issue-01\encode.py", line 59, in encode
         encoded_signs = [
-      File "C:\Users\Àðò¸ì\Documents\Python Projects\AAA\DS_Python_4\03-instrumenty-testirovaniya-v-python\issue-01\issue-01.py", line 60, in <listcomp>
+      File "C:\Users\ï¿½ï¿½ï¿½ï¿½\Documents\Python Projects\AAA\DS_Python_4\03-instrumenty-testirovaniya-v-python\issue-01\encode.py", line 60, in <listcomp>
         LETTER_TO_MORSE[letter] for letter in message
     KeyError: ','
 Trying:
@@ -64,10 +64,10 @@ Expecting:
     KeyError: ','
 ok
 1 items had no tests:
-    issue-01
+    encode
 **********************************************************************
 1 items had failures:
-   1 of   7 in issue-01.encode
+   1 of   7 in encode.encode
 7 tests in 2 items.
 6 passed and 1 failed.
 ***Test Failed*** 1 failures.
@@ -75,7 +75,7 @@ ok
 
 --------------------------------------------------
 
-Result of running command with flag: python -m doctest -o NORMALIZE_WHITESPACE -v issue-01.py
+Result of running command with flag: python -m doctest -o NORMALIZE_WHITESPACE -v encode.py
 
 Trying:
     encode('WHY ARE YOU SO SAD?')
@@ -123,9 +123,9 @@ Expecting:
     KeyError: ','
 ok
 1 items had no tests:
-    issue-01
+    encode
 1 items passed all tests:
-   7 tests in issue-01.encode
+   7 tests in encode.encode
 7 tests in 2 items.
 7 passed and 0 failed.
 Test passed.

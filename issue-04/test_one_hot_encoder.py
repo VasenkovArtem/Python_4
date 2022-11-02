@@ -82,13 +82,3 @@ def test_mutable_type():
     with pytest.raises(TypeError) as e:
         fit_transform([['c'], ['a'], ['c']])
     assert "unhashable type: 'list'" in str(e)
-
-
-if __name__ == '__main__':
-    test_cities_list()
-    test_cities_strs()
-    test_type_error_args()
-    test_type_error_len()
-    test_several_iterable()
-    test_different_types()
-    test_mutable_type()

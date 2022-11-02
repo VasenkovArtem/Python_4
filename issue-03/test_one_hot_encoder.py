@@ -76,14 +76,3 @@ class TestOneHotEncoder(unittest.TestCase):
         with self.assertRaises(TypeError) as e:
             fit_transform([[1], [2], [1]])
         self.assertTrue("unhashable type: 'list'" == str(e.exception))
-
-
-if __name__ == '__main__':
-    tester = TestOneHotEncoder()
-    tester.test_cities_list()
-    tester.test_cities_strs()
-    tester.test_type_error_args()
-    tester.test_type_error_len()
-    tester.test_several_iterable()
-    tester.test_different_types()
-    tester.test_mutable_type()
